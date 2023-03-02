@@ -1,0 +1,5 @@
+<h3><a href="{% url 'form' %}">Add a Post</a></h3>
+{% for x in obj %}
+<p> <a href="{% url 'views' x.id %}"> {{ x.title }}</a> <small><a href="{% url 'delete' x.id %}">delete</a></small> </p> 
+{% endfor %}
+    

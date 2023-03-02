@@ -1,0 +1,5 @@
+<form action="" method="POST">
+    {% csrf_token %}
+<p style="font-size: 17px;">Are you sure you want to delete<span style="color: red;"> {{ deletes.title }}</span> post?<p><br><br>
+    <button class="btn btn-secondary">Delete Post</button>  <a  class="btn btn-secondary" href="{% url 'details' %}">Back</a>
+    </form>
